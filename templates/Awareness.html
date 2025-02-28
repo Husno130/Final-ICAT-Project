@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cancer Awareness - OncoScan</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #2a2f3a, #1d222b);
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            padding: 90px 20px;
+            background: rgba(0, 0, 0, 0.7);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            position: relative;
+            overflow: hidden;
+            animation: fadeIn 1s ease-out;
+        }
+
+        header h1 {
+            font-size: 3.5em;
+            color: #f5f5f5;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.3em;
+            font-weight: 300;
+            color: #c7c7c7;
+        }
+
+        /* Sections */
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 50px auto;
+            text-align: center;
+        }
+
+        .section {
+            background: rgba(255, 255, 255, 0.08);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+            margin-bottom: 40px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        .section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        .section h2 {
+            color: #e0e4e9;
+            font-size: 1.9em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .section h2 i {
+            margin-right: 10px;
+            color: #7f91a8;
+        }
+
+        .section p {
+            font-size: 1.2em;
+            line-height: 1.7;
+            color: #c4c4c4;
+        }
+
+        /* Call-To-Action Button */
+        .cta-button {
+            background: linear-gradient(to right, #5c677d, #3b4252);
+            color: white;
+            padding: 15px 40px;
+            font-size: 1.3em;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            text-decoration: none;
+            display: block;
+            margin: 50px auto;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+            transition: all 0.3s ease-in-out;
+            width: fit-content;
+            font-weight: 500;
+        }
+
+        .cta-button:hover {
+            background: linear-gradient(to right, #4c566a, #2e3440);
+            transform: scale(1.05);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #222831;
+            text-align: center;
+            padding: 20px;
+            margin-top: auto;
+            font-size: 1.1em;
+        }
+
+        footer p {
+            color: #bdbdbd;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.8em;
+            }
+
+            .section h2 {
+                font-size: 1.6em;
+            }
+
+            .section p {
+                font-size: 1.1em;
+            }
+
+            .cta-button {
+                font-size: 1.1em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Cancer Awareness</h1>
+        <p>Early detection saves lives. Learn about prevention, symptoms, and screenings.</p>
+    </header>
+
+    <div class="container">
+        
+        <div class="section">
+            <h2> What is Cancer?</h2>
+            <p>Cancer is a disease caused by uncontrolled cell growth, leading to tumors or abnormal cell function. Early detection can significantly improve treatment outcomes.</p>
+        </div>
+
+        <div class="section">
+            <h2> Early Detection Matters</h2>
+            <p>Screenings and self-examinations are crucial in identifying cancer in its early stages. Regular checkups can help diagnose cancer before symptoms appear.</p>
+        </div>
+
+        <div class="section">
+            <h2> Risk Factors</h2>
+            <p>Factors like smoking, unhealthy diets, prolonged sun exposure, and genetics can increase the risk of cancer. Awareness and lifestyle changes can lower these risks.</p>
+        </div>
+
+        <div class="section">
+            <h2> Prevention and Lifestyle Tips</h2>
+            <p>Adopting a healthy lifestyle can reduce cancer risks. A balanced diet, exercise, avoiding tobacco, and regular screenings play a crucial role in prevention.</p>
+        </div>
+
+        <a href="#" class="cta-button" onclick="window.history.back()">Back to Home</a>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2025 OncoScan. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

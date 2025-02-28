@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imaging Techniques - OncoScan</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #ecf0f1, #bdc3c7);
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(rgba(44, 62, 80, 0.85), rgba(44, 62, 80, 0.85)), url("{{ url_for('static', filename='images/cancer1.jpg') }}");
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8);
+            border-bottom: 5px solid #1f618d;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        header h1 {
+            font-size: 4em;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            font-size: 1.5em;
+            font-weight: 300;
+            margin-top: 10px;
+        }
+
+        .container {
+            width: 85%;
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 2.5em;
+            color: #2c3e50;
+            margin-top: 30px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        h2::after {
+            content: "";
+            display: block;
+            width: 60px;
+            height: 4px;
+            background: #1f618d;
+            margin: 10px auto;
+            border-radius: 5px;
+        }
+
+        .table-container {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table th, table td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 2px solid #1f618d;
+        }
+
+        table th {
+            background: #1f618d;
+            color: white;
+            font-size: 1.2em;
+        }
+
+        table tr:hover {
+            background: #f1f1f1;
+        }
+
+        .cta-button {
+            background: linear-gradient(45deg, #1f618d, #154360);
+            color: white;
+            padding: 15px 35px;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 25px;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .cta-button:hover {
+            background: linear-gradient(45deg, #154360, #0b3d91);
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        footer {
+            background: linear-gradient(to right, #2c3e50, #1f618d);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 1.1em;
+            font-weight: bold;
+            margin-top: 50px;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Imaging Techniques for Cancer Subclasses</h1>
+    <p class="mak">Explore the types of medical imaging used for each cancer type</p>
+</header>
+
+<div class="container">
+    <h2>Cancer Type Imaging Methods</h2>
+    <div class="table-container">
+        <table>
+            <tr>
+                <th>Cancer Type</th>
+                <th>Imaging Technique</th>
+            </tr>
+            <tr><td>Blood</td><td>Peripheral Blood Smear (PBS)</td></tr>
+            <tr><td>Brain</td><td>MRI</td></tr>
+            <tr><td>Breast</td><td>Ultrasound</td></tr>
+            <tr><td>Cervical</td><td>Liquid-Based Cytology (LBC)</td></tr>
+            <tr><td>Colon</td><td>Histopathological Images</td></tr>
+            <tr><td>Lung</td><td>Histopathological Images</td></tr>
+            <tr><td>Lung (No Tumor)</td><td>CT Scan</td></tr>
+            <tr><td>Oral</td><td>Normal Images</td></tr>
+            <tr><td>Skin</td><td>Normal Images</td></tr>
+        </table>
+    </div>
+
+    <a href="#" class="cta-button" onclick="window.history.back()">Back to Home</a>
+</div>
+
+<footer>
+    <p class="mad">&copy; 2025 OncoScan. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
