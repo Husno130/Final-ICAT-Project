@@ -100,6 +100,3 @@ http://localhost:5000
 - **Team:** OncoScan AI Research Group
 - **Email:** husno130@gmail.com
 - **GitHub:** [@husno130](https://github.com/yourusername)
-
-Would you like me to refine anything or add more details? Let me know! 🚀
-
